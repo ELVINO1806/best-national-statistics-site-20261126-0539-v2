@@ -1,8 +1,8 @@
 # NusaStat — Indonesia in Numbers
 
-[![make.fun bounty](https://make.fun/bounty/best-national-statistics-site-20261126-0539/badge.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539)
-[![make.fun rank](https://make.fun/bounty/best-national-statistics-site-20261126-0539/rank/ELVINO1806/best-national-statistics-site-20261126-0539-v2/badge.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539)
-[![make.fun reward](https://make.fun/bounty/best-national-statistics-site-20261126-0539/reward/ELVINO1806/best-national-statistics-site-20261126-0539-v2/badge.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539)
+[![make.fun bounty](https://make.fun/badge/best-national-statistics-site-20261126-0539.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539)
+[![make.fun rank](https://make.fun/badge/best-national-statistics-site-20261126-0539/ELVINO1806/best-national-statistics-site-20261126-0539-v2/rank.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539)
+[![make.fun reward](https://make.fun/badge/best-national-statistics-site-20261126-0539/ELVINO1806/best-national-statistics-site-20261126-0539-v2/reward.svg)](https://make.fun/bounty/best-national-statistics-site-20261126-0539)
 
 A static national statistics site for Indonesia: six pages, twenty charts and more than 350 sourced figures — every number labelled with its source and year. No build step, no network at run time, no external fonts, images or scripts. Everything the pages load is a file under `app/`.
 
@@ -21,7 +21,7 @@ A static national statistics site for Indonesia: six pages, twenty charts and mo
 
 ## Figures
 
-More than 350 figures in total: 23 ten-year series (2015–2024, 230 values) from the World Bank's World Development Indicators, 19 latest BPS and ministry releases (poverty, unemployment, wages, PISA, stunting), the ten largest provinces, density for all 38 provinces, population by island group, and trade values for 2024.
+More than 350 figures in total: 23 series (2015–2024, 228 values; health spending and tertiary enrolment end in 2023) from the World Bank's World Development Indicators, 19 latest BPS and ministry releases (poverty, unemployment, wages, PISA, stunting), the ten largest provinces, density for all 38 provinces, population by island group, and trade values for 2024.
 
 ## Sources
 
