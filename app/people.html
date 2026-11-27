@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People — NusaStat · Indonesia in Numbers</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Nusa<span>Stat</span></a>
+<p class="tagline">Indonesia in numbers — real figures, every one sourced.</p>
+</div></header>
+<nav class="main"><div class="wrap">
+<a href="index.html">Overview</a>
+<a href="economy.html">Economy</a>
+<a href="people.html" class="active">People</a>
+<a href="provinces.html">Provinces</a>
+<a href="health-education.html">Health &amp; Education</a>
+<a href="digital.html">Digital</a>
+</div></nav>
+<main class="wrap">
+<h1>People</h1>
+<p class="lede">284 million people, growing more slowly every year — and more than half now live in cities.</p>
+<div class="cards">
+<div class="card"><div class="k">Population</div><div class="v">284.4<small> million</small></div><p class="n">Mid-year estimate, Statistik Indonesia 2026</p><p class="src"><b>Source:</b> BPS, 2025</p></div>
+<div class="card"><div class="k">Population growth</div><div class="v">0.81<small>% / year</small></div><p class="n">Down from 1.12% in 2015</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Urban share</div><div class="v">58.8<small>%</small></div><p class="n">Of the total population</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Labour force</div><div class="v">155.37<small> million</small></div><p class="n">August 2026</p><p class="src"><b>Source:</b> BPS, 2026</p></div>
+<div class="card"><div class="k">Unemployment</div><div class="v">4.75<small>%</small></div><p class="n">Open unemployment, August 2026</p><p class="src"><b>Source:</b> BPS, 2026</p></div>
+<div class="card"><div class="k">Gini ratio</div><div class="v">0.368</div><p class="n">March 2026; World Bank estimate 34.9 in 2024</p><p class="src"><b>Source:</b> BPS, 2026</p></div>
+</div>
+
+<div class="panel wide">
+<h3>Population: 262 million to 283 million in ten years</h3>
+<p class="chart-cap">Total population, people. Switch to the growth rate to see the slowdown.</p>
+<div class="toggles" data-toggle-group="pop-chart">
+<button class="on" data-series="population" data-caption="Total population, people. Source: World Bank, 2024; BPS mid-year 2025 estimate is 284.4 million.">Population</button>
+<button data-series="popGrowth" data-caption="Population growth, % per year. Source: World Bank, 2024.">Growth rate</button>
+<button data-series="urbanShare" data-caption="Urban population, % of total population. Source: World Bank, 2024.">Urban share</button>
+</div>
+<div id="pop-chart" data-chart="line" data-series="population" data-title="Total population" data-unit="people"></div>
+<p class="src chart-cap">Total population, people. <b>Source:</b> World Bank, 2024; BPS mid-year 2025 estimate is 284.4 million.</p>
+</div>
+
+<div class="cols">
+<div class="panel">
+<h3>Fertility keeps falling</h3>
+<p class="chart-cap">Fertility rate, births per woman.</p>
+<div data-chart="line" data-series="fertility" data-title="Fertility rate" data-unit="births per woman"></div>
+<p class="src"><b>Source:</b> World Bank, 2024. From 2.35 in 2015 to 2.12 in 2024.</p>
+</div>
+<div class="panel">
+<h3>Unemployment: the ILO view</h3>
+<p class="chart-cap">Unemployment, ILO modelled estimate, % of labour force.</p>
+<div data-chart="line" data-series="unemploymentIlo" data-title="Unemployment, ILO estimate" data-unit="% of labour force"></div>
+<p class="src"><b>Source:</b> World Bank, 2024. BPS open unemployment: 4.75%, August 2026.</p>
+</div>
+</div>
+
+<div class="panel">
+<h3>Jobs and pay — the latest BPS releases</h3>
+<p class="sub">59.4% of workers are informal (February 2025), and the average wage was Rp 3,420,000 a month in August 2026.</p>
+<div class="table-scroll" data-table="bps-latest"></div>
+</div>
+
+<div class="panel">
+<h3>Population, 2015–2024</h3>
+<div class="table-scroll" data-table="series" data-series="population"></div>
+</div>
+<div class="panel">
+<h3>Urban population, 2015–2024</h3>
+<div class="table-scroll" data-table="series" data-series="urbanShare"></div>
+</div>
+<div class="callout"><p><strong>Poverty:</strong> 8.07% of Indonesians lived below the poverty line in March 2026 — 22.93 million people, on a line of Rp 669,235 a month. Urban poverty was 6.34%, rural 10.67%. <b>Source:</b> BPS, 2026.</p></div>
+</main>
+<footer><div class="wrap">
+<p><strong>Sources:</strong> BPS (Statistics Indonesia), releases 2024–2026 · World Bank, World Development Indicators, accessed 27 November 2026.</p>
+<p><a href="economy.html">← Economy</a> · <a href="provinces.html">Provinces →</a></p>
+</div></footer>
+</body>
+</html>

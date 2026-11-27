@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital — NusaStat · Indonesia in Numbers</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Nusa<span>Stat</span></a>
+<p class="tagline">Indonesia in numbers — real figures, every one sourced.</p>
+</div></header>
+<nav class="main"><div class="wrap">
+<a href="index.html">Overview</a>
+<a href="economy.html">Economy</a>
+<a href="people.html">People</a>
+<a href="provinces.html">Provinces</a>
+<a href="health-education.html">Health &amp; Education</a>
+<a href="digital.html" class="active">Digital</a>
+</div></nav>
+<main class="wrap">
+<h1>Digital</h1>
+<p class="lede">The fastest change in this whole site: internet use went from one in five Indonesians to nearly three in four in ten years.</p>
+<div class="cards">
+<div class="card"><div class="k">Internet users</div><div class="v">72.8<small>%</small></div><p class="n">Of the population; 22.1% in 2015</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Internet users</div><div class="v">≈206<small> million</small></div><p class="n">72.8% of 283.5 million people, 2024</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Mobile subscriptions</div><div class="v">122.5<small> per 100</small></div><p class="n">More subscriptions than people</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Internet growth</div><div class="v">+50.7<small> pts</small></div><p class="n">Percentage points, 2015–2024</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Mobile peak</div><div class="v">162.8<small> per 100</small></div><p class="n">In 2017, before SIM re-registration</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Still offline</div><div class="v">27.2<small>%</small></div><p class="n">Of the population in 2024</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+</div>
+
+<div class="panel wide">
+<h3>Internet use: 22% → 73% in a decade</h3>
+<p class="chart-cap">People using the internet, % of population. Switch to mobile subscriptions to see the 2017 peak and the re-registration drop.</p>
+<div class="toggles" data-toggle-group="net-chart">
+<button class="on" data-series="internetUsers" data-caption="People using the internet, % of population. Source: World Bank, 2024.">Internet users</button>
+<button data-series="mobileSubs" data-caption="Mobile phone subscriptions per 100 people. Source: World Bank, 2024.">Mobile subscriptions</button>
+</div>
+<div id="net-chart" data-chart="line" data-series="internetUsers" data-title="People using the internet" data-unit="% of population"></div>
+<p class="src chart-cap">People using the internet, % of population. <b>Source:</b> World Bank, 2024.</p>
+</div>
+
+<div class="cols">
+<div class="panel">
+<h3>Internet users, year by year</h3>
+<p class="chart-cap">People using the internet, % of population.</p>
+<div data-chart="bars" data-series="internetUsers" data-title="People using the internet" data-unit="% of population" data-color="#2e7d4f"></div>
+<p class="src"><b>Source:</b> World Bank, 2024.</p>
+</div>
+<div class="panel">
+<h3>Mobile subscriptions, year by year</h3>
+<p class="chart-cap">Mobile phone subscriptions per 100 people.</p>
+<div data-chart="bars" data-series="mobileSubs" data-title="Mobile subscriptions" data-unit="per 100 people" data-color="#0077b6"></div>
+<p class="src"><b>Source:</b> World Bank, 2024. The 2018 fall follows mandatory SIM-card re-registration.</p>
+</div>
+</div>
+
+<div class="panel">
+<h3>Internet users, 2015–2024</h3>
+<div class="table-scroll" data-table="series" data-series="internetUsers"></div>
+</div>
+<div class="panel">
+<h3>Mobile subscriptions, 2015–2024</h3>
+<div class="table-scroll" data-table="series" data-series="mobileSubs"></div>
+</div>
+<div class="callout"><p><strong>What it means:</strong> with 206 million people online and 122 mobile subscriptions per 100 people, Indonesia is a mobile-first country — but 27.2% of the population was still offline in 2024, and the gap runs along the same lines as the provincial gaps on the <a href="provinces.html">Provinces</a> page. <b>Source:</b> World Bank, 2024.</p></div>
+</main>
+<footer><div class="wrap">
+<p><strong>Sources:</strong> World Bank, World Development Indicators, accessed 27 November 2026.</p>
+<p><a href="health-education.html">← Health &amp; Education</a> · <a href="index.html">Back to the overview</a></p>
+</div></footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Economy — NusaStat · Indonesia in Numbers</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Nusa<span>Stat</span></a>
+<p class="tagline">Indonesia in numbers — real figures, every one sourced.</p>
+</div></header>
+<nav class="main"><div class="wrap">
+<a href="index.html">Overview</a>
+<a href="economy.html" class="active">Economy</a>
+<a href="people.html">People</a>
+<a href="provinces.html">Provinces</a>
+<a href="health-education.html">Health &amp; Education</a>
+<a href="digital.html">Digital</a>
+</div></nav>
+<main class="wrap">
+<h1>Economy</h1>
+<p class="lede">A US$1.4 trillion economy that grew every year of the decade except 2020 — and was growing 5.11% again by 2025.</p>
+<div class="cards">
+<div class="card"><div class="k">GDP 2024</div><div class="v">US$1,396<small> bn</small></div><p class="n">Current US dollars</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">GDP, PPP</div><div class="v">US$4,670<small> bn</small></div><p class="n">International dollars</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">GDP per person</div><div class="v">US$4,925</div><p class="n">Current US dollars</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Exports 2024</div><div class="v">US$311.5<small> bn</small></div><p class="n">Goods and services, 22.31% of GDP</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Imports 2024</div><div class="v">US$286.3<small> bn</small></div><p class="n">Goods and services, 20.50% of GDP</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Budget deficit</div><div class="v">2.81<small>% of GDP</small></div><p class="n">APBN 2025</p><p class="src"><b>Source:</b> Ministry of Finance, 2025</p></div>
+</div>
+
+<div class="panel wide">
+<h3>GDP: from US$861 billion to US$1,396 billion in ten years</h3>
+<p class="chart-cap">Switch between nominal GDP, PPP GDP and GDP per person.</p>
+<div class="toggles" data-toggle-group="gdp-chart">
+<button class="on" data-series="gdpUsd" data-caption="GDP in current US dollars, billions. Source: World Bank, 2024.">GDP, US$</button>
+<button data-series="gdpPpp" data-caption="GDP at purchasing power parity, billions of international dollars. Source: World Bank, 2024.">GDP, PPP</button>
+<button data-series="gdpPerCapita" data-caption="GDP per person in current US dollars. Source: World Bank, 2024.">GDP per person</button>
+<button data-series="gniPppPerCapita" data-caption="GNI per person at PPP, international dollars. Source: World Bank, 2024.">GNI per person, PPP</button>
+</div>
+<div id="gdp-chart" data-chart="line" data-series="gdpUsd" data-title="GDP, current US dollars" data-unit="US$ billion"></div>
+<p class="src chart-cap">GDP in current US dollars, billions. <b>Source:</b> World Bank, 2024.</p>
+</div>
+
+<div class="cols">
+<div class="panel">
+<h3>Trade: exports ahead of imports</h3>
+<p class="chart-cap">Exports and imports of goods and services, % of GDP.</p>
+<div data-chart="line" data-series="exportsShare,importsShare" data-title="Trade shares" data-unit="% of GDP"></div>
+<p class="src"><b>Source:</b> World Bank, 2024. Exports US$311.5 bn, imports US$286.3 bn in 2024.</p>
+</div>
+<div class="panel">
+<h3>Inflation cooled after 2015</h3>
+<p class="chart-cap">Consumer price inflation, annual average, % per year.</p>
+<div data-chart="line" data-series="cpiInflation" data-title="Consumer price inflation" data-unit="% per year"></div>
+<p class="src"><b>Source:</b> World Bank, 2024. BPS: 2.92% full-year 2025; 3.28% year-on-year, September 2026.</p>
+</div>
+</div>
+
+<div class="panel">
+<h3>Growth year by year</h3>
+<p class="chart-cap">Real GDP growth, % per year. The −2.07% bar is the 2020 pandemic contraction.</p>
+<div data-chart="bars" data-series="gdpGrowth" data-title="Real GDP growth" data-unit="% per year" data-color="#0b5563"></div>
+<p class="src"><b>Source:</b> World Bank, 2024. BPS: 5.11% growth in 2025.</p>
+</div>
+
+<div class="panel">
+<h3>GDP, 2015–2024</h3>
+<div class="table-scroll" data-table="series" data-series="gdpUsd"></div>
+</div>
+<div class="panel">
+<h3>Real GDP growth, 2015–2024</h3>
+<div class="table-scroll" data-table="series" data-series="gdpGrowth"></div>
+</div>
+<div class="panel">
+<h3>Inflation, 2015–2024</h3>
+<div class="table-scroll" data-table="series" data-series="cpiInflation"></div>
+</div>
+</main>
+<footer><div class="wrap">
+<p><strong>Sources:</strong> World Bank, World Development Indicators, accessed 27 November 2026 · BPS (Statistics Indonesia), releases 2024–2026 · Ministry of Finance, APBN 2025.</p>
+<p><a href="index.html">← Back to the overview</a> · <a href="people.html">People →</a></p>
+</div></footer>
+</body>
+</html>

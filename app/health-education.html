@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Health &amp; Education — NusaStat · Indonesia in Numbers</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Nusa<span>Stat</span></a>
+<p class="tagline">Indonesia in numbers — real figures, every one sourced.</p>
+</div></header>
+<nav class="main"><div class="wrap">
+<a href="index.html">Overview</a>
+<a href="economy.html">Economy</a>
+<a href="people.html">People</a>
+<a href="provinces.html">Provinces</a>
+<a href="health-education.html" class="active">Health &amp; Education</a>
+<a href="digital.html">Digital</a>
+</div></nav>
+<main class="wrap">
+<h1>Health &amp; Education</h1>
+<p class="lede">People live longer and their children survive more often than a decade ago — but PISA scores still trail the OECD.</p>
+<div class="cards">
+<div class="card"><div class="k">Life expectancy</div><div class="v">71.3<small> years</small></div><p class="n">At birth; 69.5 in 2015</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Infant mortality</div><div class="v">15.2</div><p class="n">Deaths per 1,000 live births; 21.9 in 2015</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Health spending</div><div class="v">2.70<small>% of GDP</small></div><p class="n">Current health expenditure, 2023</p><p class="src"><b>Source:</b> World Bank, 2023</p></div>
+<div class="card"><div class="k">Stunting</div><div class="v">19.8<small>%</small></div><p class="n">Children under 5, down from 21.5% in 2023</p><p class="src"><b>Source:</b> Ministry of Health, SSGI, 2024</p></div>
+<div class="card"><div class="k">PISA mathematics</div><div class="v">366</div><p class="n">Mean score, OECD average is 472</p><p class="src"><b>Source:</b> OECD, PISA 2022</p></div>
+<div class="card"><div class="k">Tertiary enrolment</div><div class="v">44.9<small>%</small></div><p class="n">Gross enrolment, 2023; 32.5% in 2015</p><p class="src"><b>Source:</b> World Bank, 2023</p></div>
+</div>
+
+<div class="panel wide">
+<h3>Life expectancy: up, with a pandemic dip</h3>
+<p class="chart-cap">Life expectancy at birth, years. The 2020–2021 dip is the COVID-19 pandemic.</p>
+<div data-chart="line" data-series="lifeExpectancy" data-title="Life expectancy at birth" data-unit="years"></div>
+<p class="src"><b>Source:</b> World Bank, 2024. 69.52 years in 2015, 71.29 in 2024.</p>
+</div>
+
+<div class="cols">
+<div class="panel">
+<h3>Child mortality fell by a third</h3>
+<p class="chart-cap">Deaths per 1,000 live births.</p>
+<div data-chart="line" data-series="infantMortality,under5Mortality" data-title="Child mortality" data-unit="per 1,000 live births"></div>
+<p class="src"><b>Source:</b> World Bank, 2024. Infant 21.9 → 15.2; under-5 26.1 → 17.7.</p>
+</div>
+<div class="panel">
+<h3>More children stay in school</h3>
+<p class="chart-cap">Gross enrolment, %. Primary, secondary and tertiary.</p>
+<div data-chart="line" data-series="enrolPrimary,enrolSecondary,enrolTertiary" data-title="School enrolment" data-unit="%"></div>
+<p class="src"><b>Source:</b> World Bank, 2024 (tertiary to 2023). Secondary enrolment rose 87.8% → 98.8%.</p>
+</div>
+</div>
+
+<div class="panel">
+<h3>PISA 2022 — where Indonesian 15-year-olds stand</h3>
+<p class="sub">Mean scores. The OECD averages are 472 in mathematics, 476 in reading and 485 in science.</p>
+<div class="table-scroll"><table>
+<thead><tr><th>Subject</th><th>Indonesia</th><th>OECD average</th><th>Gap</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td>Mathematics</td><td><strong>366</strong></td><td>472</td><td>−106</td><td>OECD, PISA 2022</td></tr>
+<tr><td>Reading</td><td><strong>359</strong></td><td>476</td><td>−117</td><td>OECD, PISA 2022</td></tr>
+<tr><td>Science</td><td><strong>383</strong></td><td>485</td><td>−102</td><td>OECD, PISA 2022</td></tr>
+</tbody></table></div>
+</div>
+
+<div class="panel">
+<h3>Life expectancy, 2015–2024</h3>
+<div class="table-scroll" data-table="series" data-series="lifeExpectancy"></div>
+</div>
+<div class="panel">
+<h3>Infant mortality, 2015–2024</h3>
+<div class="table-scroll" data-table="series" data-series="infantMortality"></div>
+</div>
+<div class="callout"><p><strong>Human Development Index 75.02 (BPS, 2024):</strong> Indonesia sits in the “high human development” band, built on longer lives, more schooling and higher incomes — but the HDI is an average, and the provincial gaps behind it are wide.</p></div>
+</main>
+<footer><div class="wrap">
+<p><strong>Sources:</strong> World Bank, World Development Indicators, accessed 27 November 2026 · BPS (Statistics Indonesia), 2024 · Ministry of Health, SSGI 2023–2024 · OECD, PISA 2022.</p>
+<p><a href="provinces.html">← Provinces</a> · <a href="digital.html">Digital →</a></p>
+</div></footer>
+</body>
+</html>

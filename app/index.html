@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NusaStat — Indonesia in Numbers</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Nusa<span>Stat</span></a>
+<p class="tagline">Indonesia in numbers — real figures, every one sourced.</p>
+</div></header>
+<nav class="main"><div class="wrap">
+<a href="index.html" class="active">Overview</a>
+<a href="economy.html">Economy</a>
+<a href="people.html">People</a>
+<a href="provinces.html">Provinces</a>
+<a href="health-education.html">Health &amp; Education</a>
+<a href="digital.html">Digital</a>
+</div></nav>
+<main class="wrap">
+<h1>Indonesia in numbers</h1>
+<p class="lede">The country at a glance: 284 million people, a US$1.4 trillion economy, and a decade of change across twenty charts.</p>
+<div class="filter-row">
+<label for="figure-search"><strong>Find a figure:</strong></label>
+<input type="search" id="figure-search" placeholder="Try “poverty”, “internet”, “GDP”…">
+<span class="hint" id="search-count"></span>
+</div>
+<div id="figure-grid">
+<div class="cards strip">
+<div class="card"><div class="k">Population</div><div class="v">284.4<small> million</small></div><p class="n">Mid-year estimate, Statistik Indonesia 2026</p><p class="src"><b>Source:</b> BPS, 2025</p></div>
+<div class="card"><div class="k">Economic growth</div><div class="v">5.11<small>%</small></div><p class="n">Real GDP growth; 2024 was 5.03%</p><p class="src"><b>Source:</b> BPS, 2025</p></div>
+<div class="card"><div class="k">GDP per person</div><div class="v">US$4,925</div><p class="n">Current US dollars</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Inflation</div><div class="v">2.92<small>%</small></div><p class="n">Full-year CPI; Dec 2024 year-on-year was 1.57%</p><p class="src"><b>Source:</b> BPS, 2025</p></div>
+<div class="card"><div class="k">Unemployment</div><div class="v">4.75<small>%</small></div><p class="n">Open unemployment rate, August 2026</p><p class="src"><b>Source:</b> BPS, 2026</p></div>
+<div class="card"><div class="k">Poverty rate</div><div class="v">8.07<small>%</small></div><p class="n">March 2026; 22.93 million people</p><p class="src"><b>Source:</b> BPS, 2026</p></div>
+</div>
+
+<div class="panel wide">
+<h3>Growth held above 5% — except the pandemic year</h3>
+<p class="chart-cap">Real GDP growth, % per year. Switch the view to see GDP in dollars or per person.</p>
+<div class="toggles" data-toggle-group="main-chart">
+<button class="on" data-series="gdpGrowth" data-caption="Real GDP growth, % per year. Source: World Bank, 2024; BPS puts 2025 growth at 5.11%.">GDP growth</button>
+<button data-series="gdpUsd" data-caption="GDP in current US dollars, billions. Source: World Bank, 2024.">GDP, US$</button>
+<button data-series="gdpPerCapita" data-caption="GDP per person in current US dollars. Source: World Bank, 2024.">GDP per person</button>
+<button data-series="population" data-caption="Total population, people. Source: World Bank, 2024; BPS mid-year 2025 estimate is 284.4 million.">Population</button>
+</div>
+<div id="main-chart" data-chart="line" data-series="gdpGrowth" data-title="Real GDP growth" data-unit="% per year"></div>
+<p class="src chart-cap">Real GDP growth, % per year. <b>Source:</b> World Bank, 2024; BPS puts 2025 growth at 5.11%.</p>
+</div>
+
+<div class="cards">
+<div class="card"><div class="k">Life expectancy</div><div class="v">71.3<small> years</small></div><p class="n">At birth</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+<div class="card"><div class="k">Human Development Index</div><div class="v">75.02</div><p class="n">Index 0–100</p><p class="src"><b>Source:</b> BPS, 2024</p></div>
+<div class="card"><div class="k">Internet users</div><div class="v">72.8<small>%</small></div><p class="n">Share of population</p><p class="src"><b>Source:</b> World Bank, 2024</p></div>
+</div>
+
+<div class="cols">
+<div class="panel">
+<h3>Internet use tripled in a decade</h3>
+<p class="chart-cap">People using the internet, % of population.</p>
+<div data-chart="line" data-series="internetUsers" data-title="People using the internet" data-unit="% of population"></div>
+<p class="src"><b>Source:</b> World Bank, 2024. From 22.1% in 2015 to 72.8% in 2024.</p>
+</div>
+<div class="panel">
+<h3>Cities keep growing</h3>
+<p class="chart-cap">Urban population, % of total population.</p>
+<div data-chart="line" data-series="urbanShare" data-title="Urban population" data-unit="% of total"></div>
+<p class="src"><b>Source:</b> World Bank, 2024. From 53.2% in 2015 to 58.8% in 2024.</p>
+</div>
+</div>
+
+<div class="panel">
+<h3>Headline indicators — all of them</h3>
+<p class="sub">Every headline figure on this page, with its source and year.</p>
+<div class="table-scroll" data-table="headlines"></div>
+</div>
+
+<div class="panel">
+<h3>Latest releases</h3>
+<p class="sub">The newest numbers from BPS and the ministries — newer than the 2015–2024 series.</p>
+<div class="table-scroll" data-table="bps-latest"></div>
+</div>
+
+<div class="callout"><p><strong>Where to go next:</strong> <a href="economy.html">Economy</a> for GDP, trade and inflation · <a href="people.html">People</a> for population and jobs · <a href="provinces.html">Provinces</a> for all 38 provinces · <a href="health-education.html">Health &amp; Education</a> for life expectancy and schools · <a href="digital.html">Digital</a> for internet and mobile.</p></div>
+</div>
+</main>
+<footer><div class="wrap">
+<p><strong>Sources:</strong> BPS (Statistics Indonesia), national releases 2024–2026 · World Bank, World Development Indicators, accessed 27 November 2026 · Ministry of Finance (APBN 2025) · Ministry of Health, SSGI · OECD PISA 2022 · Dukcapil, Ministry of Home Affairs, Semester I 2024.</p>
+<p>NusaStat is an independent statistics site. Figures compiled 27 November <span id="year-now">2026</span>. Nothing on this site is fetched from the internet at run time.</p>
+</div></footer>
+</body>
+</html>

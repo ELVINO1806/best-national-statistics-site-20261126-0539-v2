@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Provinces — NusaStat · Indonesia in Numbers</title>
+<link rel="stylesheet" href="style.css">
+<script src="data.js" defer></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="index.html">Nusa<span>Stat</span></a>
+<p class="tagline">Indonesia in numbers — real figures, every one sourced.</p>
+</div></header>
+<nav class="main"><div class="wrap">
+<a href="index.html">Overview</a>
+<a href="economy.html">Economy</a>
+<a href="people.html">People</a>
+<a href="provinces.html" class="active">Provinces</a>
+<a href="health-education.html">Health &amp; Education</a>
+<a href="digital.html">Digital</a>
+</div></nav>
+<main class="wrap">
+<h1>Provinces</h1>
+<p class="lede">38 provinces, one very uneven map: Java holds 55.9% of all Indonesians, and Jakarta packs 16,165 people into every square kilometre.</p>
+<div class="cards">
+<div class="card"><div class="k">Provinces</div><div class="v">38</div><p class="n">Across the archipelago</p><p class="src"><b>Source:</b> BPS, 2024</p></div>
+<div class="card"><div class="k">Largest province</div><div class="v">West Java</div><p class="n">50.35 million people, 17.88% of Indonesia</p><p class="src"><b>Source:</b> BPS, 2024</p></div>
+<div class="card"><div class="k">Java's share</div><div class="v">55.93<small>%</small></div><p class="n">157.4 million people on one island</p><p class="src"><b>Source:</b> Dukcapil, 2024</p></div>
+<div class="card"><div class="k">Densest province</div><div class="v">Jakarta</div><p class="n">16,165 people per km²</p><p class="src"><b>Source:</b> BPS, 2024</p></div>
+<div class="card"><div class="k">Least dense</div><div class="v">South Papua</div><p class="n">5 people per km²</p><p class="src"><b>Source:</b> BPS, 2024</p></div>
+<div class="card"><div class="k">Indonesia total</div><div class="v">281.6<small> million</small></div><p class="n">Interim projection, mid-year 2024</p><p class="src"><b>Source:</b> BPS, 2024</p></div>
+</div>
+
+<div class="panel wide">
+<h3>The ten largest provinces</h3>
+<p class="chart-cap">Population in thousands. West, East and Central Java together hold 46% of the country.</p>
+<div id="prov-bars"></div>
+<p class="src"><b>Source:</b> BPS, interim population projection mid-year 2024.</p>
+</div>
+
+<div class="cols">
+<div class="panel">
+<h3>Population by island group</h3>
+<p class="chart-cap">Share of population, %.</p>
+<div id="island-bars"></div>
+<p class="src"><b>Source:</b> Dukcapil, Ministry of Home Affairs, Semester I 2024.</p>
+</div>
+<div class="panel">
+<h3>The twelve densest provinces</h3>
+<p class="chart-cap">People per square kilometre.</p>
+<div id="density-bars"></div>
+<p class="src"><b>Source:</b> BPS, population density by province 2024.</p>
+</div>
+</div>
+
+<div class="panel">
+<h3>Ten largest provinces — the table</h3>
+<div class="table-scroll" data-table="prov-top10"></div>
+</div>
+
+<div class="panel">
+<h3>Population by island group</h3>
+<div class="table-scroll" data-table="islands"></div>
+</div>
+
+<div class="panel">
+<h3>Density in all 38 provinces</h3>
+<p class="sub">Jakarta is 3,200 times denser than South Papua. Use the filter to find a province.</p>
+<div class="filter-row">
+<label for="province-filter"><strong>Find a province:</strong></label>
+<input type="search" id="province-filter" placeholder="Try “Papua”, “Java”, “Sulawesi”…">
+<span class="hint" id="province-count"></span>
+</div>
+<div class="table-scroll" id="density-table" data-table="prov-density"></div>
+</div>
+</main>
+<footer><div class="wrap">
+<p><strong>Sources:</strong> BPS (Statistics Indonesia), interim population projection mid-year 2024 and population density by province 2024 · Dukcapil, Ministry of Home Affairs, Semester I 2024.</p>
+<p><a href="people.html">← People</a> · <a href="health-education.html">Health &amp; Education →</a></p>
+</div></footer>
+</body>
+</html>
