@@ -7,7 +7,7 @@
 // Output directory: MAKEFUN_OUTPUT_DIR when set, otherwise /output.
 // Node 22, standard library only.
 
-import { cpSync, mkdirSync, rmSync, writeFileSync } from "node:fs";
+import { cpSync, mkdirSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { buildDossier } from "./vendor/makefun-frontend.ts";
@@ -24,7 +24,6 @@ const caps = {
   app_max_bytes: 16777216
 };
 
-rmSync(outDir, { recursive: true, force: true });
 mkdirSync(outDir, { recursive: true });
 cpSync(join(repoRoot, "app"), join(outDir, "app"), { recursive: true });
 cpSync(join(repoRoot, "screenshots"), join(outDir, "screenshots"), { recursive: true });
